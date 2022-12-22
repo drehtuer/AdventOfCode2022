@@ -1,0 +1,103 @@
+= Advent of Code 2022 in modern {cpp}
+:backend: html5
+:doctype: article
+:icons: font
+:icontype: svg
+:lang: en
+:nofooter:
+:xrefstyle: short
+
+:url-advent-of-code: https://adventofcode.com/2022[Advent of Code 2022^]
+
+
+Trying out new {cpp}14/17/20 features and improving my github repo setup while solving tasks from link:{url-advent-of-code}. Tasks are not done once per day, I only started at the end of the event and plan to do multiple tasks per day to catch up/finish until new year.
+
+
+== Things to try out
+
+:url-build2: https://build2.org/[Build2^]
+:url-iwyu: https://include-what-you-use.org/[include-what-you-use^]
+:url-clang-tidy: https://clang.llvm.org/extra/clang-tidy[Clang-Tidy^]
+:url-clang-format: https://clang.llvm.org/docs/ClangFormat.html[Clang-Format^]
+:url-doctest: https://github.com/doctest/doctest[doctest^]
+:url-cppcheck: https://cppcheck.sourceforge.io[Cppcheck^]
+
+* [ ] Follow TDD/BDD
+** [ ] Using link:{url-doctest} as testing framework
+* [ ] New C++ features (up to {cpp}20)
+** [ ] Literals
+** [ ] Improved `constexpr`
+** [x] Modules
+** [ ] Concepts
+** [ ] JThread
+** [ ] Coroutines
+** [ ] Filesystem library
+* [ ] GitLab actions
+** [ ] Automated builds
+** [ ] Automated unit tests
+** [ ] Automated code coverage
+** [ ] Automated static code analysis
+* [x] link:{url-build2} as build system
+** [ ] link:{url-iwyu}
+** [ ] link:{url-clang-tidy}
+** [ ] link:{url-clang-format}
+** [ ] link:{url-cppcheck}
+* [ ] Improve VSCode settings
+** [x] nvim integration
+** [x] Building in WSL
+
+
+== Solutions
+
+[cols="1,1,1,1,1,1", frame=none, grid=none, stripes=none]
+|===
+| link:Day01[Day 01] icon:uncheck[]
+| link:Day02[Day 02]
+| link:Day03[Day 03]
+| link:Day04[Day 04]
+| link:Day05[Day 05]
+| link:Day06[Day 06]
+| link:Day07[Day 07]
+| link:Day08[Day 08]
+| link:Day09[Day 09]
+| link:Day10[Day 10]
+| link:Day11[Day 11]
+| link:Day12[Day 12]
+| link:Day13[Day 13]
+| link:Day14[Day 14]
+| link:Day15[Day 15]
+| link:Day16[Day 16]
+| link:Day17[Day 17]
+| link:Day18[Day 18]
+| link:Day19[Day 19]
+| link:Day20[Day 20]
+| link:Day21[Day 21]
+| link:Day22[Day 22]
+| link:Day23[Day 23]
+| link:Day24[Day 24]
+| link:Day25[Day 25]
+|
+|
+|
+|
+|
+|===
+
+
+== Build environment
+
+:url-ubuntu-22-04: https://www.releases.ubuntu.com/22.04[Ubuntu 22.04 Jammy Jellyfish^]
+
+All code was developed and tested on a Windows PC running WSL with
+link:{url-ubuntu-22-04} and gcc11.
+
+Necessary packages:
+
+    sudo apt install \
+      asciidoctor \
+      build-essential \
+      clang-format \
+      clang-tidy \
+      cppcheck \
+      curl \
+      iwyu

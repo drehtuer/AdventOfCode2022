@@ -1,0 +1,12 @@
+: 1
+name: libDay01
+version: 0.1.0-a.0.z
+summary: Day01 C++ library
+license: MIT
+description-file: README.adoc
+url: https://github.com/drehtuer/AdventOfCode2022
+email: drehtuer@drehtuer.de
+build-error-email: drehtuer@drehtuer.de
+tests: * libDay01-tests == $
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0

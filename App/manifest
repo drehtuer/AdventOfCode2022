@@ -1,0 +1,12 @@
+: 1
+name: App
+version: 0.1.0-a.0.z
+summary: App C++ executable
+license: MIT
+description-file: README.adoc
+url: https://github.com/drehtuer/AdventOfCode2022
+email: drehtuer@drehtuer.de
+build-error-email: drehtuer@drehtuer.de
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
+depends: libDay01 ^ $

@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libDay01/
+}
+
+export $out_root/libDay01/$import.target

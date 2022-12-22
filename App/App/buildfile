@@ -1,0 +1,6 @@
+import libs = libDay01%lib{Day01}
+
+exe{App}: {cxx}{**} $libs
+{
+  test = true
+}

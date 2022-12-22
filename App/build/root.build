@@ -1,0 +1,17 @@
+# Uncomment to suppress warnings coming from external libraries.
+#
+#cxx.internal.scope = current
+
+cxx.std = experimental
+cxx.features.modules = true
+
+using cxx
+
+assert $cxx.features.modules "No modules support for $cxx.signature"
+
+mxx{*}: extension = mxx
+cxx{*}: extension = cxx
+
+# The test target for cross-testing (running tests under Wine, etc).
+#
+test.target = $cxx.target

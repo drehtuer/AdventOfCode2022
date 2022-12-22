@@ -1,0 +1,7 @@
+# Ignore these folders
+# They are either generated during build or
+# created by the IDE (vscode)
+/.build2/
+/.tmp/
+/.config-gcc/
+/.vscode/*.log

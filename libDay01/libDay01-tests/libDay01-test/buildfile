@@ -1,0 +1,4 @@
+import libs = libDay01%lib{Day01}
+#import libs += doctest%lib{doctest}
+
+exe{driver}: {cxx}{**} $libs
